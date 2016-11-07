@@ -24,17 +24,33 @@ namespace HelloWorldConsole
                     case "1":
                         StringAdder(out first, out second);
                         break;
+                    case "2":
+                        NumberAdder(out a, out b);
+                        break;
                     default:
                         doAgain = true;
                         break;
                 }
                 if (doAgain) {
-                    Console.WriteLine("Start Again?");
+
+                    Console.WriteLine("I don't do " + input);
+                    Console.WriteLine("Try Again Y or N?");
                     continue; }
 
             } while ((input = Console.ReadLine())=="Y");
             Console.WriteLine("Program finised, press enter to end program.");
             Console.ReadLine();
+        }
+
+        private static void NumberAdder(out float first, out float second)
+        {
+            Console.WriteLine("First number");
+            first = float.Parse(Console.ReadLine());
+            Console.WriteLine("Second number");
+            second = float.Parse(Console.ReadLine());
+            Console.WriteLine(first + second);
+            Console.WriteLine("Again?[Y/N]");
+
         }
 
         private static void StringAdder(out string first, out string second)
