@@ -16,6 +16,7 @@ namespace HelloWorldConsole
             float a, b, result;
             do
             {
+                bool doAgain = false;
                 Console.WriteLine("Enter 1 for String Add, 2 for Number Add");
                 input = Console.ReadLine();
                 switch (input)
@@ -24,9 +25,12 @@ namespace HelloWorldConsole
                         StringAdder(out first, out second);
                         break;
                     default:
+                        doAgain = true;
                         break;
                 }
-            
+                if (doAgain) {
+                    Console.WriteLine("Start Again?");
+                    continue; }
 
             } while ((input = Console.ReadLine())=="Y");
             Console.WriteLine("Program finised, press enter to end program.");

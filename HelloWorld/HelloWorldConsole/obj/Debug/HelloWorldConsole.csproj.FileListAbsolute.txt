@@ -4,3 +4,9 @@ c:\users\administrator\documents\visual studio 2015\Projects\HelloWorld\HelloWor
 c:\users\administrator\documents\visual studio 2015\Projects\HelloWorld\HelloWorldConsole\obj\Debug\HelloWorldConsole.exe
 c:\users\administrator\documents\visual studio 2015\Projects\HelloWorld\HelloWorldConsole\obj\Debug\HelloWorldConsole.pdb
 c:\Users\Administrator\Documents\Visual Studio 2015\Projects\HelloWorld\HelloWorldConsole\obj\Debug\HelloWorldConsole.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\C-Intro\HelloWorld\HelloWorldConsole\bin\Debug\HelloWorldConsole.exe.config
+C:\Users\Administrator\Source\Repos\C-Intro\HelloWorld\HelloWorldConsole\obj\Debug\HelloWorldConsole.exe
+C:\Users\Administrator\Source\Repos\C-Intro\HelloWorld\HelloWorldConsole\obj\Debug\HelloWorldConsole.pdb
+C:\Users\Administrator\Source\Repos\C-Intro\HelloWorld\HelloWorldConsole\bin\Debug\HelloWorldConsole.exe
+C:\Users\Administrator\Source\Repos\C-Intro\HelloWorld\HelloWorldConsole\bin\Debug\HelloWorldConsole.pdb
+C:\Users\Administrator\Source\Repos\C-Intro\HelloWorld\HelloWorldConsole\obj\Debug\HelloWorldConsole.csprojResolveAssemblyReference.cache
