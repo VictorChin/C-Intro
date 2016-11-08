@@ -13,8 +13,12 @@ namespace Mod3
             GoEat(Meal.Snack);
             DoSomething((new DateTime(2009,8,23)).DayOfWeek);
             
-            Point A = new Point(45, 90);
+            Point A = new Point(45,90);
+            A.x = 101;
+          
+            
             Point B = new Point(85, 45);
+           
             Point C = A;
             Console.WriteLine(A);
             Console.WriteLine(B);
@@ -76,11 +80,13 @@ namespace Mod3
         internal int y;
         public Point(int x, int y)
         {
+            if (x>100 || y>100) { throw new ArgumentOutOfRangeException(); }
             this.x = x;
             this.y = y;
         }
-        
-        public override string ToString() {
+
+        public override string ToString()
+        {
             return $"x:{x}, y:{y}";
         }
     }
