@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericDemo
 {
-    public class Container<T>
+    public class Container<T> where T:class, new()
     {
         private List<T> _theList;
         public int Capacity { get; }

@@ -10,6 +10,8 @@ namespace GenericDemo
     {
         static void Main(string[] args)
         {
+            
+
             var classRoom = new Container<Person>(12);
             var zoo = new Container<Animal>(50);
             var garage = new Container<Car>(8);
@@ -17,7 +19,6 @@ namespace GenericDemo
             zoo.ThingEntered += (a, b, c) => {
                 if (a.Name == "Tasty Bird") { zoo.Leave(a); }
                                               };
-
             classRoom.Enter(new Person { Name = "Bob" });
             classRoom.Enter(new Person { Name = "Jim" });
             classRoom.Enter(new Person { Name = "Tom" });
@@ -32,12 +33,12 @@ namespace GenericDemo
         }
     }
 
-    abstract class Thing {
+    public abstract class Thing {
         public string Name { get; set; }
         public override string ToString() => $"I am {Name}";
         protected abstract void Jump(int howHigh);
     }
-    class Person : Thing
+    public class Person : Thing
     {
         protected override void Jump(int howHigh)
         {
@@ -55,14 +56,14 @@ namespace GenericDemo
             }
         }
     }
-    class Animal: Thing
+    public class Animal : Thing
     {
         protected override void Jump(int howHigh)
         {
             Console.WriteLine("Animal jumping");
         }
     }
-    class Car: Thing
+    public class Car : Thing
     {
         protected override void Jump(int howHigh)
         {
@@ -80,7 +81,7 @@ namespace GenericDemo
             }
         }
     }
-    static class ReverseName {
+    public static class ReverseName {
         public static string Mamamia(this Thing t,int x)
         {
             char[] cArray = t.Name.ToCharArray();
