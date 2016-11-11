@@ -12,8 +12,10 @@ namespace Cryptography
     {
         static void Main(string[] args)
         {
-            var crypto = EnterpriseLibraryContainer.Current.GetInstance<CryptographyManager>();
-            string encryptedContentsBase64 = crypto.EncryptSymmetric("RijndaelManaged", "ABD!@#$%");
+            var crypto = 
+                EnterpriseLibraryContainer.Current.GetInstance<CryptographyManager>();
+            string encryptedContentsBase64 = 
+                crypto.EncryptSymmetric("RijndaelManaged", "ABD!@#$%");
             Console.WriteLine(encryptedContentsBase64);
         }
     }
